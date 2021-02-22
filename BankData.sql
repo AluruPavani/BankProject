@@ -1,6 +1,6 @@
 create database banks;
 use banks;
-drop table bankaccount;
+
 create table bankaccount(CARD_NUMBER int not null,NAME varchar(30) not null,AGE int not null,
 GENDER varchar(20) not null,BANK varchar(30) not null,CREDIT_LIMIT int not null);
  insert into bankaccount values(1234,"Sita",25,"f","axis",10000);
@@ -71,6 +71,4 @@ insert into banktransaction values(5678,"05/04/2020",900);
 insert into banktransaction values(5678,"04/10/2020",1100);
 select *from bankaccount;
 select *from banktransaction;
-drop database banks;
-drop table bankaccount;
-drop table banktransaction;
+
